@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Metallic innovation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container" style="text-align: center">
+    <header class="jumbotron" style="background-color: #33e689; color: white">
+        <h1>Sistema de triagem por tipo de metais</h1>
+        <p>Materias reutilizaveis ou materiais inutilizáveis</p>
+    </header>
+    <h2>Triagem</h2>
+    <p>Após a coleta, o processo de reciclagem de equipamentos eletrônicos se inicia por meio de uma triagem, que pode ser feita manualmente ou por um computador. Há a separação dos equipamentos em condições de uso (que podem ser doados) dos que não podem ser reutilizados.</p>
+    <button type="button" class="btn btn-primary" onclick="init()">
+        Iniciar Reconhecimento
+    </button>
+        <div id="webcam-container"></div>
+        <div class="display-4" id="label-container"></div>
+
+    <footer
+        class="panel-footer"
+        style="text-align: center; background-color: #33e689; color: white">
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="tensor.js"></script>
+</body>
+</html>
